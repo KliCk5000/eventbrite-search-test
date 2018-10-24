@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Eventbrite Search Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <meta name="description" content="Find an event near you!">
+</head>
+
+<body>
+  <div class="container">
+    <header role="banner">
+      <h1>Search for an event!</h1>
+    </header>
+    <!-- Form we use to search -->
+    <section role="region">
+      <form class="js-form">
+        <div class="form-line">
+          <label for="location">Enter a location:</label>
+          <input type="text" name="location" class="js-location" placeholder="City, State, or Zip">
+        </div>
+        <div class="form-line">
+          <label for="max-distance">Max distance in miles:</label>
+          <input type="number" name="max-distance" class="js-max-distance" value="10">
+        </div>
+          <div class="form-line">
+            <input type="submit" value="Submit!">
+          </div>
+      </form>
+      <p class="error-message js-error-message"></p>
+    </section>
+    <!-- Results Area -->
+    <section role="region" class="results js-results hidden">
+      <h2>Search results</h2>
+      <ul class="results-list js-results-list">
+      </ul>
+    </section>
+
+    <footer role="contentinfo">
+      <p>Made by Nick Dean. <a href="https://github.com/KliCk5000/eventbrite-search-test">Link to Github page</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </div>
+</body>
+
+</html>
